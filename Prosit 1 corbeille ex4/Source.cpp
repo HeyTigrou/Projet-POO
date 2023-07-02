@@ -13,4 +13,6 @@ int main() {
 	v1.accelerer();
 	v2.accelerer();
 	v3->accelerer();
+
+	delete v3;
 }

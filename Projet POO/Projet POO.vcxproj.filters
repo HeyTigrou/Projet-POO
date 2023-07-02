@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers des forms">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{a9c0e9ed-5040-4fec-99ed-72f5131d11cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\COMPONENT">
+      <UniqueIdentifier>{74ad7823-408e-429e-9430-56c0a78118f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\SERVICE">
+      <UniqueIdentifier>{250dec79-142d-4683-9c85-b5cca335e833}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="COMP_DATABASE.cpp">
+      <Filter>Fichiers sources\COMPONENT</Filter>
+    </ClCompile>
+    <ClCompile Include="SERV_SEARCH.cpp">
+      <Filter>Fichiers sources\SERVICE</Filter>
+    </ClCompile>
+    <ClCompile Include="SERV_DELETE.cpp">
+      <Filter>Fichiers sources\SERVICE</Filter>
+    </ClCompile>
+    <ClCompile Include="SERV_UPDATE.cpp">
+      <Filter>Fichiers sources\SERVICE</Filter>
+    </ClCompile>
+    <ClCompile Include="SERV_SHOW.cpp">
+      <Filter>Fichiers sources\SERVICE</Filter>
+    </ClCompile>
+    <ClCompile Include="SERV_INSERT.cpp">
+      <Filter>Fichiers sources\SERVICE</Filter>
+    </ClCompile>
+    <ClCompile Include="SERV_STATS.cpp">
+      <Filter>Fichiers sources\SERVICE</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainMenu.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientMenu.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientCreation.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientShow.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientSearchAffichage.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientSearchUpdate.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientUpdate.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientSearchDelete.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientDelete.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StaffMenu.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StockMenu.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StockCreation.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StockSearchUpdate.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StockUpdate.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StockSearchShow.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StockShow.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StockSearchDelete.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StockDelete.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderMenu.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderCreation.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderSearchDelete.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderSearchShow.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderDelete.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderShow.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StatsMenu.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StatsAverage.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StatsTotalClient.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StatsTurnover.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StatsTopProducts.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StatsBottomProducts.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StaffCreation.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StaffSearchUpdate.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StaffUpdate.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StaffSearchShow.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StaffShow.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StaffSearchDelete.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="StaffDelete.h">
+      <Filter>Fichiers des forms</Filter>
+    </ClInclude>
+    <ClInclude Include="COMP_DATABASE.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="SERV_SEARCH.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="SERV_DELETE.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="SERV_UPDATE.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="SERV_SHOW.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="SERV_INSERT.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="SERV_STATS.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

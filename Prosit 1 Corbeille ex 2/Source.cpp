@@ -1,5 +1,4 @@
 #include "CLobject.h"
-#include <iostream>
 
 using namespace std;
 

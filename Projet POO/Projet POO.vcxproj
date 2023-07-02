@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{3F33A8F9-2E37-4B19-95B6-CFABA3D31967}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>ProjetPOO</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="COMP_DATABASE.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="SERV_DELETE.cpp" />
+    <ClCompile Include="SERV_INSERT.cpp" />
+    <ClCompile Include="SERV_SEARCH.cpp" />
+    <ClCompile Include="SERV_SHOW.cpp" />
+    <ClCompile Include="SERV_STATS.cpp" />
+    <ClCompile Include="SERV_UPDATE.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClientCreation.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ClientDelete.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ClientSearchAffichage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ClientSearchDelete.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ClientSearchUpdate.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ClientShow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ClientUpdate.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="COMP_DATABASE.h" />
+    <ClInclude Include="MainMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ClientMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OrderCreation.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OrderDelete.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OrderMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OrderSearchDelete.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OrderSearchShow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OrderShow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SERV_DELETE.h" />
+    <ClInclude Include="SERV_INSERT.h" />
+    <ClInclude Include="SERV_SEARCH.h" />
+    <ClInclude Include="SERV_SHOW.h" />
+    <ClInclude Include="SERV_STATS.h" />
+    <ClInclude Include="SERV_UPDATE.h" />
+    <ClInclude Include="StaffCreation.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StaffDelete.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StaffMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StaffSearchDelete.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StaffSearchShow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StaffSearchUpdate.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StaffShow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StaffUpdate.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StatsAverage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StatsBottomProducts.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StatsMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StatsTopProducts.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StatsTotalClient.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StatsTurnover.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StockCreation.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StockDelete.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StockMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StockSearchDelete.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StockSearchShow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StockSearchUpdate.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StockShow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StockUpdate.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClientCreation.resx">
+      <DependentUpon>ClientCreation.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientDelete.resx">
+      <DependentUpon>ClientDelete.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientMenu.resx">
+      <DependentUpon>ClientMenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientSearchAffichage.resx">
+      <DependentUpon>ClientSearchAffichage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientSearchDelete.resx">
+      <DependentUpon>ClientSearchDelete.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientSearchUpdate.resx">
+      <DependentUpon>ClientSearchUpdate.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientShow.resx">
+      <DependentUpon>ClientShow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientUpdate.resx">
+      <DependentUpon>ClientUpdate.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderCreation.resx">
+      <DependentUpon>OrderCreation.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderDelete.resx">
+      <DependentUpon>OrderDelete.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderMenu.resx">
+      <DependentUpon>OrderMenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderSearchDelete.resx">
+      <DependentUpon>OrderSearchDelete.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderSearchShow.resx">
+      <DependentUpon>OrderSearchShow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderShow.resx">
+      <DependentUpon>OrderShow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffCreation.resx">
+      <DependentUpon>StaffCreation.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffDelete.resx">
+      <DependentUpon>StaffDelete.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffMenu.resx">
+      <DependentUpon>StaffMenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffSearchDelete.resx">
+      <DependentUpon>StaffSearchDelete.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffSearchShow.resx">
+      <DependentUpon>StaffSearchShow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffSearchUpdate.resx">
+      <DependentUpon>StaffSearchUpdate.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffShow.resx">
+      <DependentUpon>StaffShow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffUpdate.resx">
+      <DependentUpon>StaffUpdate.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatsAverage.resx">
+      <DependentUpon>StatsAverage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatsBottomProducts.resx">
+      <DependentUpon>StatsBottomProducts.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatsMenu.resx">
+      <DependentUpon>StatsMenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatsTopProducts.resx">
+      <DependentUpon>StatsTopProducts.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatsTotalClient.resx">
+      <DependentUpon>StatsTotalClient.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatsTurnover.resx">
+      <DependentUpon>StatsTurnover.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockCreation.resx">
+      <DependentUpon>StockCreation.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockDelete.resx">
+      <DependentUpon>StockDelete.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockMenu.resx">
+      <DependentUpon>StockMenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockSearchDelete.resx">
+      <DependentUpon>StockSearchDelete.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockSearchShow.resx">
+      <DependentUpon>StockSearchShow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockSearchUpdate.resx">
+      <DependentUpon>StockSearchUpdate.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockShow.resx">
+      <DependentUpon>StockShow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockUpdate.resx">
+      <DependentUpon>StockUpdate.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
