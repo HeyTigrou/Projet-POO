@@ -1,0 +1,1 @@
+Hello, this repository contains all the work I did during this teaching block. The project itself is contained in the "POO Projet" folder. The SQL script used to create the database used in the project is contained in the "SQL Query Database" file.
